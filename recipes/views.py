@@ -3,7 +3,7 @@ from django.http import HttpResponse
 
 
 def home(request):
-    return HttpResponse('HOME')
+    return render(request, 'global/home.html')
 
 def sobre(request):
     return HttpResponse('SOBRE')
